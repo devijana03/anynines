@@ -1,6 +1,6 @@
--
+---
 
-port = <%=
+port: <%=
 
 port = p("port")
 
@@ -8,8 +8,7 @@ if port == 1024 or port == 7999
   raise "Invalid port number"
 end
 
-if port == 8080
-else
+if port != 8080
   raise "Invalid port number"
 end
 
